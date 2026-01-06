@@ -602,36 +602,36 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
         const words = [
-            { text: "АНТЕННА", correct: true, explanation: "Правильно! Слово 'антенна' пишется с двумя НН (от латинского antenna)" },
-            { text: "КОЛЛЕКЦИЯ", correct: true, explanation: "Правильно! Слово 'коллекция' пишется с двумя ЛЛ (от латинского collectio)" },
-            { text: "ПРОГРАММА", correct: true, explanation: "Правильно! Слово 'программа' пишется с двумя ММ (от греческого programma)" },
-            { text: "АЛЛЕЯ", correct: true, explanation: "Правильно! Слово 'аллея' пишется с двумя ЛЛ (от французского allée)" },
-            { text: "СУММА", correct: true, explanation: "Правильно! Слово 'сумма' пишется с двумя ММ (от латинского summa)" },
-            { text: "ГРАММАТИКА", correct: true, explanation: "Правильно! Слово 'грамматика' пишется с двумя ММ (от греческого grammatike)" },
-            { text: "КОРАЛЛЫ", correct: true, explanation: "Правильно! Слово 'кораллы' пишется с двумя ЛЛ (от латинского corallium)" },
-            { text: "ТЕРРАСА", correct: true, explanation: "Правильно! Слово 'терраса' пишется с двумя РР (от французского terrasse)" },
-            { text: "АККОРД", correct: true, explanation: "Правильно! Слово 'аккорд' пишется с двумя КК (от итальянского accordo)" },
-            { text: "ИЛЛЮЗИЯ", correct: true, explanation: "Правильно! Слово 'иллюзия' пишется с двумя ЛЛ (от латинского illusio)" },
-            { text: "АППАРАТ", correct: true, explanation: "Правильно! Слово 'аппарат' пишется с двумя ПП (от латинского apparatus)" },
-            { text: "КОРИДОР", correct: true, explanation: "Правильно! Слово 'коридор' пишется с ОДНОЙ Р (от итальянского corridoio)" },
-            { text: "ГАЛЕРЕЯ", correct: true, explanation: "Правильно! Слово 'галерея' пишется с ОДНОЙ Л (от итальянского galleria)" },
-            { text: "АЛЮМИНИЙ", correct: true, explanation: "Правильно! Слово 'алюминий' пишется с ОДНОЙ Л (от латинского alumen)" },
-            { text: "КАРИКАТУРА", correct: true, explanation: "Правильно! Слово 'карикатура' пишется с ОДНОЙ Р (от итальянского caricatura)" },
-            { text: "АЛЕЯ", correct: false, explanation: "Ошибка! Правильно: АЛЛЕЯ (с двумя ЛЛ)" },
-            { text: "КОЛЕКЦИЯ", correct: false, explanation: "Ошибка! Правильно: КОЛЛЕКЦИЯ (с двумя ЛЛ)" },
-            { text: "ГРАМАТИКА", correct: false, explanation: "Ошибка! Правильно: ГРАММАТИКА (с двумя ММ)" },
-            { text: "СУМА", correct: false, explanation: "Ошибка! Правильно: СУММА (с двумя ММ)" },
-            { text: "ТЕРАСА", correct: false, explanation: "Ошибка! Правильно: ТЕРРАСА (с двумя РР)" },
-            { text: "АКОРД", correct: false, explanation: "Ошибка! Правильно: АККОРД (с двумя КК)" },
-            { text: "ИЛЮЗИЯ", correct: false, explanation: "Ошибка! Правильно: ИЛЛЮЗИЯ (с двумя ЛЛ)" },
-            { text: "КОРАЛЫ", correct: false, explanation: "Ошибка! Правильно: КОРАЛЛЫ (с двумя ЛЛ)" },
+            { text: "АНТЕННА", correct: true, explanation: "Правильно! Слово 'антенна' пишется с двумя Н" },
+            { text: "КОЛЛЕКЦИЯ", correct: true, explanation: "Правильно! Слово 'коллекция' пишется с двумя Л" },
+            { text: "ПРОГРАММА", correct: true, explanation: "Правильно! Слово 'программа' пишется с двумя М" },
+            { text: "АЛЛЕЯ", correct: true, explanation: "Правильно! Слово 'аллея' пишется с двумя Л" },
+            { text: "СУММА", correct: true, explanation: "Правильно! Слово 'сумма' пишется с двумя М" },
+            { text: "ГРАММАТИКА", correct: true, explanation: "Правильно! Слово 'грамматика' пишется с двумя М" },
+            { text: "КОРАЛЛЫ", correct: true, explanation: "Правильно! Слово 'кораллы' пишется с двумя Л" },
+            { text: "ТЕРРАСА", correct: true, explanation: "Правильно! Слово 'терраса' пишется с двумя Р)" },
+            { text: "АККОРД", correct: true, explanation: "Правильно! Слово 'аккорд' пишется с двумя К" },
+            { text: "ИЛЛЮЗИЯ", correct: true, explanation: "Правильно! Слово 'иллюзия' пишется с двумя Л" },
+            { text: "АППАРАТ", correct: true, explanation: "Правильно! Слово 'аппарат' пишется с двумя П" },
+            { text: "КОРИДОР", correct: true, explanation: "Правильно! Слово 'коридор' пишется с ОДНОЙ Р" },
+            { text: "ГАЛЕРЕЯ", correct: true, explanation: "Правильно! Слово 'галерея' пишется с ОДНОЙ Л" },
+            { text: "АЛЮМИНИЙ", correct: true, explanation: "Правильно! Слово 'алюминий' пишется с ОДНОЙ Л" },
+            { text: "КАРИКАТУРА", correct: true, explanation: "Правильно! Слово 'карикатура' пишется с ОДНОЙ Р" },
+            { text: "АЛЕЯ", correct: false, explanation: "Ошибка! Правильно: АЛЛЕЯ (с двумя Л)" },
+            { text: "КОЛЕКЦИЯ", correct: false, explanation: "Ошибка! Правильно: КОЛЛЕКЦИЯ (с двумя Л)" },
+            { text: "ГРАМАТИКА", correct: false, explanation: "Ошибка! Правильно: ГРАММАТИКА (с двумя М)" },
+            { text: "СУМА", correct: false, explanation: "Ошибка! Правильно: СУММА (с двумя М)" },
+            { text: "ТЕРАСА", correct: false, explanation: "Ошибка! Правильно: ТЕРРАСА (с двумя Р)" },
+            { text: "АКОРД", correct: false, explanation: "Ошибка! Правильно: АККОРД (с двумя К)" },
+            { text: "ИЛЮЗИЯ", correct: false, explanation: "Ошибка! Правильно: ИЛЛЮЗИЯ (с двумя Л)" },
+            { text: "КОРАЛЫ", correct: false, explanation: "Ошибка! Правильно: КОРАЛЛЫ (с двумя Л)" },
             { text: "КОРРИДОР", correct: false, explanation: "Ошибка! Правильно: КОРИДОР (с ОДНОЙ Р)" },
             { text: "ГАЛЛЕРЕЯ", correct: false, explanation: "Ошибка! Правильно: ГАЛЕРЕЯ (с ОДНОЙ Л)" },
             { text: "АЛЛЮМИНИЙ", correct: false, explanation: "Ошибка! Правильно: АЛЮМИНИЙ (с ОДНОЙ Л)" },
             { text: "КАРИККАТУРА", correct: false, explanation: "Ошибка! Правильно: КАРИКАТУРА (с ОДНОЙ Р)" },
-            { text: "АННТЕННА", correct: false, explanation: "Ошибка! Правильно: АНТЕННА (не нужно удваивать Н в начале)" },
-            { text: "ПРОГРАМА", correct: false, explanation: "Ошибка! Правильно: ПРОГРАММА (с двумя ММ)" },
-            { text: "АППЕТИТ", correct: true, explanation: "Правильно! Слово 'аппетит' пишется с двумя ПП (от латинского appetitus)" }
+            { text: "АНТЕНА", correct: false, explanation: "Ошибка! Правильно: АНТЕННА (С ДВУМЯ Н)" },
+            { text: "ПРОГРАМА", correct: false, explanation: "Ошибка! Правильно: ПРОГРАММА (с двумя М)" },
+            { text: "АППЕТИТ", correct: true, explanation: "Правильно! Слово 'аппетит' пишется с двумя П" }
         ];
 
         let currentWord = null;
@@ -945,3 +945,4 @@
     </script>
 </body>
 </html>
+
